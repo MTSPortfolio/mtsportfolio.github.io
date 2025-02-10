@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: large;
+    padding-top: 80px; /* Adjust based on navbar height */
+    margin-left: 5%;
+}
+
+li {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Sticky Navigation Bar */
+.navbar {
+    position: fixed; /* Stays at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1E3A8A; /* Dark blue */
+    padding: 15px 0;
+    z-index: 1000; /* Stays on top of everything */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Centering nav content */
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between; /* Pushes logo left, links right */
+    align-items: center;
+    margin: auto;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex; /* Makes links horizontal */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 10px 15px; /* Adds spacing for better clicking */
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Gold on hover */
+}
+
+/* Content styling */
+.content {
+    padding: 100px 20px; /* Adds space so content is not hidden under navbar */
+}
