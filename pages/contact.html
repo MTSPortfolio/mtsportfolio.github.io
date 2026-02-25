@@ -3,18 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Contact - Matias Tudela</title>
     <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">My Portfolio</a>
+            <a href="../index.html" class="logo">My Portfolio</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <div class="contact-container">
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="hero-content">
+                <h1 class="contact-title">Get In Touch</h1>
+                <p class="contact-subtitle">Let's discuss your next project</p>
+            </div>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <span class="material-icons contact-card-icon">email</span>
+                    <h3>Email</h3>
+                    <p>Send me a message anytime</p>
+                    <a href="mailto:your.email@example.com" class="contact-button">
+                        your.email@example.com
+                    </a>
+                </div>
+
+                <div class="contact-info-card">
+                    <span class="material-icons contact-card-icon">work</span>
+                    <h3>LinkedIn</h3>
+                    <p>Let's connect professionally</p>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-button">
+                        View Profile
+                    </a>
+                </div>
+
+                <div class="contact-info-card">
+                    <span class="material-icons contact-card-icon">code</span>
+                    <h3>GitHub</h3>
+                    <p>Check out my repositories</p>
+                    <a href="https://github.com/yourprofile" target="_blank" class="contact-button">
+                        View GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-section">
+            <div class="form-container">
+                <h2 class="form-title">Send Me a Message</h2>
+                <p class="form-description">Fill out the form below and I'll get back to you as soon as possible.</p>
+                
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">
+                            <span class="material-icons form-icon">person</span>
+                            Name
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <span class="material-icons form-icon">email</span>
+                            Email
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">
+                            <span class="material-icons form-icon">subject</span>
+                            Subject
+                        </label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <span class="material-icons form-icon">message</span>
+                            Message
+                        </label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span class="material-icons btn-icon">send</span>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section class="contact-section">
+            <div class="info-box">
+                <span class="material-icons info-icon">info</span>
+                <div>
+                    <h3>Looking for collaboration?</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

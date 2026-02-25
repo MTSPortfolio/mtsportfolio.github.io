@@ -3,42 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects - Matias Tudela</title>
     <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">My Portfolio</a>
+            <a href="../index.html" class="logo">My Portfolio</a>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <header>
-        <h1>Projects</h1>
-        <p>Check out some of my projects below!</p>
-    <div class="container">
-        <div class="project">
-            <h2>Project 1</h2>
-            <p><strong>Description:</strong> Description of project 1.</p>
-            <p><strong>Objectives:</strong> Objectives of project 1.</p>
-            <p><strong>Technology Stack:</strong> Tech stack of project 1.</p>
-            <p><strong>Development:</strong> Development details of project 1.</p>
-            <p><strong>Other Info:</strong> Other relevant info about project 1.</p>
-        </div>
-        <div class="project">
-            <h2>Project 2</h2>
-            <p><strong>Description:</strong> Description of project 2.</p>
-            <p><strong>Objectives:</strong> Objectives of project 2.</p>
-            <p><strong>Technology Stack:</strong> Tech stack of project 2.</p>
-            <p><strong>Development:</strong> Development details of project 2.</p>
-            <p><strong>Other Info:</strong> Other relevant info about project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
+
+    <div class="projects-container">
+        <!-- Hero Section -->
+        <section class="projects-hero">
+            <div class="hero-content">
+                <h1 class="projects-title">My Projects</h1>
+                <p class="projects-subtitle">Building solutions that make a difference</p>
+            </div>
+        </section>
+
+        <!-- Projects List -->
+        <section class="projects-list">
+            <!-- Project 1: Marko-Viz -->
+            <div class="project-detail" id="marko-viz">
+                <div class="project-header">
+                    <div class="project-number">01</div>
+                    <div>
+                        <h2>Marko-Viz</h2>
+                        <p class="project-tagline">Financial Portfolio Optimizer</p>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">description</span> Description</h3>
+                            <p>Marko-Viz is a comprehensive financial portfolio optimization tool that leverages Modern Portfolio Theory to help investors make data-driven decisions. The application provides interactive visualizations of portfolio performance, risk metrics, and optimal asset allocations.</p>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">track_changes</span> Objectives</h3>
+                            <ul>
+                                <li>Implement Markowitz Portfolio Theory for optimal asset allocation</li>
+                                <li>Provide real-time financial data integration</li>
+                                <li>Create intuitive visualizations for complex financial metrics</li>
+                                <li>Enable users to simulate different investment scenarios</li>
+                            </ul>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">computer</span> Technology Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Streamlit</span>
+                                <span class="tech-badge">Pandas</span>
+                                <span class="tech-badge">NumPy</span>
+                                <span class="tech-badge">SciPy</span>
+                                <span class="tech-badge">yFinance</span>
+                                <span class="tech-badge">Plotly</span>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">build</span> Development</h3>
+                            <p>Built using Streamlit for rapid deployment and interactive UI. The backend implements efficient frontier calculations using SciPy optimization algorithms. Real-time market data is fetched via yFinance API, and portfolio analytics are computed using NumPy and Pandas.</p>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">auto_awesome</span> Key Features</h3>
+                            <ul>
+                                <li>Interactive efficient frontier visualization</li>
+                                <li>Risk-return optimization algorithms</li>
+                                <li>Real-time stock data integration</li>
+                                <li>Portfolio performance backtesting</li>
+                                <li>Sharpe ratio and volatility analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://marko-viz.streamlit.app/" target="_blank" class="btn btn-primary">
+                            <span class="material-icons btn-icon">rocket_launch</span>
+                            <span>View Live App</span>
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <span>📂 View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Jobview -->
+            <div class="project-detail" id="jobview">
+                <div class="project-header">
+                    <div class="project-number">02</div>
+                    <div>
+                        <h2>Jobview</h2>
+                        <p class="project-tagline">Company Review Platform</p>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">description</span> Description</h3>
+                            <p>Jobview is a comprehensive platform designed to help job seekers make informed career decisions by providing transparent company reviews and workplace insights. The platform aggregates employee feedback to give candidates a realistic view of potential employers.</p>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">track_changes</span> Objectives</h3>
+                            <ul>
+                                <li>Create a transparent review system for companies</li>
+                                <li>Help job seekers make informed career decisions</li>
+                                <li>Provide analytics on workplace culture and satisfaction</li>
+                                <li>Build a community-driven platform for career insights</li>
+                            </ul>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">computer</span> Technology Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Flask</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">Bootstrap</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">build</span> Development</h3>
+                            <p>Developed as a full-stack web application using Flask framework. Features user authentication, review submission system, and data analytics dashboard. The database is structured to handle user reviews, company profiles, and rating aggregations.</p>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">auto_awesome</span> Key Features</h3>
+                            <ul>
+                                <li>User-generated company reviews and ratings</li>
+                                <li>Advanced search and filtering capabilities</li>
+                                <li>Company culture analytics dashboard</li>
+                                <li>Anonymous review posting option</li>
+                                <li>Salary and benefit comparisons</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn btn-primary">
+                            <span class="material-icons btn-icon">rocket_launch</span>
+                            <span>View Live App</span>
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <span class="material-icons btn-icon">folder_open</span>
+                            <span>View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Power BI Dashboard -->
+            <div class="project-detail" id="powerbi">
+                <div class="project-header">
+                    <div class="project-number">03</div>
+                    <div>
+                        <h2>Power BI Dashboards</h2>
+                        <p class="project-tagline">Interactive Analytics Dashboards</p>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-info">
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">description</span> Description</h3>
+                            <p>A collection of professional Power BI dashboards designed for the telco industry, providing real-time insights into business metrics, customer analytics, and operational performance. These dashboards transform complex data into actionable visual stories for stakeholders.</p>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">track_changes</span> Objectives</h3>
+                            <ul>
+                                <li>Visualize key business metrics and KPIs</li>
+                                <li>Enable data-driven decision making</li>
+                                <li>Automate reporting processes</li>
+                                <li>Provide real-time business intelligence</li>
+                            </ul>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">computer</span> Technology Stack</h3>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Power BI</span>
+                                <span class="tech-badge">DAX</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Excel</span>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">build</span> Development</h3>
+                            <p>Created using Power BI Desktop with advanced DAX calculations for custom metrics. Data sources include SQL databases, Excel files, and API integrations. Python scripts are used for data preprocessing and advanced analytics before visualization.</p>
+                        </div>
+                        <div class="info-block">
+                            <h3><span class="material-icons info-icon">auto_awesome</span> Key Features</h3>
+                            <ul>
+                                <li>Interactive KPI dashboards</li>
+                                <li>Customer segmentation analysis</li>
+                                <li>Revenue and churn tracking</li>
+                                <li>Automated data refresh schedules</li>
+                                <li>Mobile-responsive design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn btn-primary">
+                            <span class="material-icons btn-icon">visibility</span>
+                            <span>View Dashboard</span>
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <span class="material-icons btn-icon">assessment</span>
+                            <span>Case Study</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="projects-cta">
+            <h2>Interested in collaborating?</h2>
+            <p>Let's discuss how we can work together on your next project</p>
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </section>
     </div>
+
 </body>
 </html>

@@ -3,67 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Matias Tudela - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">My Portfolio</a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="pages/about.html">About Me</a></li>
                 <li><a href="pages/projects.html">Projects</a></li>
                 <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <header>
-        <h1>Hello there!</h1>
-        <p>Hi, I'm Matias Tudela</p> 
-        <p>I build data driven solutions for <b>finance</b> and <b>business</b>.</p>
-        <p>Currently working as a <b>Senior Data Analyst</b> in the telco-industry in Chile.</p>
-        <p>My main interests are:</p>
-        <ul>
-            <li>Financial Analysis</li>
-            <li>Business Intelligence</li>
-            <li>Process Automation</li>
-            <li>Machine Learning</li>
-            <li>Web Development</li>
-            <li>Programming, mostly Python!</li>
-            <li>Google Cloud Platform - Amazon Web Services</li>
-        </p>
-    </header>
-    <main>
-        <p><strong>Welcome to my Portfolio!</strong></p>
-        <h2>Check Out My Projects</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Project Name</th>
-                    <th>Description</th>
-                    <th>Link</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="pages/projects.html#marko-viz" style="text-decoration: none;">Marko-Viz</a></td>
-                    <td>Portfolio optimization & visualization</td>
-                    <td><a href="https://marko-viz.streamlit.app/" target="_blank" style="text-decoration: none;">🔗 View Project</a></td>
-                </tr>
-                <tr>
-                    <td>Jobview</td>
-                    <td>Company reviews for job seekers</td>
-                    <td><a href="https://your-link.com" target="_blank" style="text-decoration: none;">🔗 View Project</a></td>
-                </tr>
-                <tr>
-                    <td>Power BI Dashboard</td>
-                    <td>Interactive analytics dashboard</td>
-                    <td><a href="https://your-link.com" target="_blank" style="text-decoration: none;">🔗 View Project</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+
+    <!-- Hero Section -->
+    <div class="home-container">
+        <section class="hero-section">
+            <div class="hero-overlay">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hello, I'm Matias Tudela</h1>
+                    <p class="hero-subtitle">Data-Driven Solutions for Finance & Business</p>
+                    <p class="hero-description">Senior Data Analyst | Python Developer | Business Intelligence Specialist</p>
+                    <div class="hero-buttons">
+                        <a href="pages/projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="pages/contact.html" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick About -->
+        <section class="home-section">
+            <div class="quick-about">
+                <h2 class="section-heading">Who I Am</h2>
+                <p class="section-description">
+                    I'm a <strong>Senior Data Analyst</strong> in the telco industry in Chile, passionate about 
+                    transforming complex data into actionable insights. I specialize in financial analysis, 
+                    business intelligence, and automation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Interests Grid -->
+        <section class="home-section">
+            <h2 class="section-heading">My Main Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <span class="material-icons interest-icon">show_chart</span>
+                    <h3>Financial Analysis</h3>
+                    <p>Portfolio optimization and financial modeling</p>
+                </div>
+                <div class="interest-card">
+                    <span class="material-icons interest-icon">trending_up</span>
+                    <h3>Business Intelligence</h3>
+                    <p>Data visualization and dashboard creation</p>
+                </div>
+                <div class="interest-card">
+                    <span class="material-icons interest-icon">settings</span>
+                    <h3>Process Automation</h3>
+                    <p>Streamlining workflows with Python</p>
+                </div>
+                <div class="interest-card">
+                    <span class="material-icons interest-icon">psychology</span>
+                    <h3>Machine Learning</h3>
+                    <p>Predictive analytics and AI solutions</p>
+                </div>
+                <div class="interest-card">
+                    <span class="material-icons interest-icon">language</span>
+                    <h3>Web Development</h3>
+                    <p>Building interactive applications</p>
+                </div>
+                <div class="interest-card">
+                    <span class="material-icons interest-icon">code</span>
+                    <h3>Python Programming</h3>
+                    <p>Data science and backend development</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="home-section">
+            <h2 class="section-heading">Featured Projects</h2>
+            <div class="featured-projects">
+                <div class="project-card">
+                    <span class="material-icons project-icon">analytics</span>
+                    <h3>Marko-Viz</h3>
+                    <p>Portfolio optimization & visualization tool for financial analysis</p>
+                    <div class="project-links">
+                        <a href="https://marko-viz.streamlit.app/" target="_blank" class="project-link">View Live</a>
+                        <a href="pages/projects.html#marko-viz" class="project-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <span class="material-icons project-icon">work</span>
+                    <h3>Jobview</h3>
+                    <p>Company reviews platform for job seekers</p>
+                    <div class="project-links">
+                        <a href="pages/projects.html#jobview" class="project-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <span class="material-icons project-icon">dashboard</span>
+                    <h3>Power BI Dashboard</h3>
+                    <p>Interactive analytics dashboard for business insights</p>
+                    <div class="project-links">
+                        <a href="pages/projects.html#powerbi" class="project-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="home-section">
+            <div class="cta-section">
+                <h2>Let's Work Together</h2>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                <a href="pages/contact.html" class="btn btn-primary">Contact Me</a>
+            </div>
+        </section>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

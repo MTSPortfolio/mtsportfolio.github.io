@@ -3,51 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - Matias Tudela</title>
     <link rel="stylesheet" href="../styles.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">My Portfolio</a>
+            <a href="../index.html" class="logo">My Portfolio</a>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <h1>About Me</h1>
-    <p>Hi, I'm <strong>Matias Tudela</strong> – a Business Analyst and Developer passionate about <strong>finance, automation, and data-driven solutions</strong>.</p>
 
-    <h2>My Background</h2>
-    <p>I specialize in building tools that transform raw data into <strong>actionable insights</strong>. My journey began in finance and business intelligence, where I developed an interest in automating processes and creating dashboards that empower decision-making.</p>
+    <div class="about-container">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="hero-content">
+                <h1 class="about-title">About Me</h1>
+                <p class="about-subtitle">Transforming data into actionable insights</p>
+            </div>
+        </section>
 
-    <h2>What I Build</h2>
-    <p>Some of my projects include:</p>
-    <ul>
-        <li><strong>Marko-Viz</strong> – A financial portfolio optimizer.</li>
-        <li><strong>Jobview</strong> – A company review platform for job seekers.</li>
-        <li><strong>Power BI Dashboards</strong> – Interactive analytics dashboards.</li>
-    </ul>
+        <!-- Introduction Card -->
+        <section class="about-section">
+            <div class="intro-card">
+                <div class="profile-header">
+                    <div class="profile-icon">MT</div>
+                    <div class="profile-info">
+                        <h2>Matias Tudela</h2>
+                        <p class="role">Business Analyst & Developer</p>
+                    </div>
+                </div>
+                <p class="intro-text">
+                    I'm passionate about <strong>finance, automation, and data-driven solutions</strong>. 
+                    With a focus on creating tools that empower decision-making, I bridge the gap between 
+                    complex data and actionable business insights.
+                </p>
+            </div>
+        </section>
 
-    <h2>Tech Stack</h2>
-    <ul>
-        <li><strong>Languages:</strong> Python, SQL, JavaScript (learning)</li>
-        <li><strong>Libraries:</strong> Pandas, NumPy, SciPy, yFinance</li>
-        <li><strong>Web Dev:</strong> Flask, Bootstrap, Streamlit</li>
-        <li><strong>Cloud & DevOps:</strong> AWS (Lambda, S3), Docker</li>
-    </ul>
+        <!-- Background Section -->
+        <section class="about-section">
+            <div class="content-card">
+                <span class="material-icons card-icon">insights</span>
+                <h2>My Background</h2>
+                <p>
+                    I specialize in building tools that transform raw data into <strong>actionable insights</strong>. 
+                    My journey began in finance and business intelligence, where I developed a passion for 
+                    automating processes and creating dashboards that empower decision-making.
+                </p>
+                <p>
+                    Today, I work as a <strong>Senior Data Analyst</strong> in the telco industry, where I combine 
+                    analytical thinking with technical skills to solve complex business challenges.
+                </p>
+            </div>
+        </section>
 
-    <h2>Let's Connect</h2>
-    <p>If you’d like to collaborate, discuss ideas, or just chat about finance and tech, feel free to reach out!</p>
-    <ul>
-        <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">My LinkedIn</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/yourprofile" target="_blank">My GitHub</a></li>
-    </ul>
+        <!-- Projects Section -->
+        <section class="about-section">
+            <h2 class="section-title">What I Build</h2>
+            <div class="cards-grid">
+                <div class="info-card">
+                    <div class="card-header">
+                        <span class="material-icons card-emoji">trending_up</span>
+                        <h3>Marko-Viz</h3>
+                    </div>
+                    <p>A financial portfolio optimizer that helps investors make data-driven decisions using modern portfolio theory.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <span class="material-icons card-emoji">work</span>
+                        <h3>Jobview</h3>
+                    </div>
+                    <p>A company review platform for job seekers to make informed career decisions based on employee feedback.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <span class="material-icons card-emoji">bar_chart</span>
+                        <h3>Power BI Dashboards</h3>
+                    </div>
+                    <p>Interactive analytics dashboards that transform complex data into visual stories for stakeholders.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="about-section">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3><span class="material-icons category-icon">computer</span> Languages</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><span class="material-icons category-icon">local_library</span> Libraries</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">SciPy</span>
+                        <span class="tech-tag">yFinance</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><span class="material-icons category-icon">public</span> Web Dev</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><span class="material-icons category-icon">cloud</span> Cloud & DevOps</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">AWS Lambda</span>
+                        <span class="tech-tag">S3</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="about-section">
+            <div class="contact-card">
+                <h2>Let's Connect</h2>
+                <p>If you'd like to collaborate, discuss ideas, or just chat about finance and tech, feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <span class="material-icons contact-icon">email</span>
+                        <span>your.email@example.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+                        <span class="material-icons contact-icon">work</span>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank" class="contact-link">
+                        <span class="material-icons contact-icon">code</span>
+                        <span>GitHub Portfolio</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
 
 </body>
 </html>
